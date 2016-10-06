@@ -62,7 +62,7 @@ void TBitField :: SetBit (const int n) // установить бит
 		throw 1;
 }
 
-void TBitField :: ClrBit (const int n) // очистить бит
+void TBitField :: ClrBit (const int n) //   очистить бит
 {
 	if ((n >= 0) && (n < BitLen))
 		pMem [GetMemIndex (n)] &= ~GetMemMask (n);
@@ -80,7 +80,7 @@ int TBitField :: GetBit (const int n) const //  получить значени�
 
 // битовые операции
 
-TBitField & TBitField :: operator = (const TBitField & bf) //  присваивание
+TBitField & TBitField :: operator = (const TBitField & bf) //   присваивание
 {
 	BitLen = bf.BitLen;
 	MemLen = bf.MemLen;
@@ -92,7 +92,7 @@ TBitField & TBitField :: operator = (const TBitField & bf) //  присваив�
 
 }
 
-int TBitField :: operator == (const TBitField & bf) const // сравнение
+int TBitField :: operator == (const TBitField & bf) const //  сравнение
 {
 	if (BitLen == bf.BitLen)
     {

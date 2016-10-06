@@ -16,7 +16,7 @@ TSet :: TSet (const TSet & s) : BitField (s.BitField), MaxPower (s.MaxPower)
 {
 }
 
-// конструктор преобразования типа
+//   конструктор преобразования типа
 TSet :: TSet (const TBitField & bf) : MaxPower (bf.GetLength()), BitField(bf)
 {
 }
@@ -27,7 +27,7 @@ TSet::operator TBitField()
 	return tmp;
 }
 
-int TSet:: GetMaxPower (void) const // получить макс. к-во эл-тов
+int TSet:: GetMaxPower (void) const //  получить макс. к-во эл-тов
 {
 	return MaxPower;
 }
@@ -37,7 +37,7 @@ int TSet :: IsMember(const int Elem) const // элемент множества?
    return BitField.GetBit (Elem);
 }
 
-void TSet :: InsElem (const int Elem) // включение элемента множества
+void TSet :: InsElem (const int Elem) //   включение элемента множества
 {
 	BitField.SetBit (Elem);
 }
