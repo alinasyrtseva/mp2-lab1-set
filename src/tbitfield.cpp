@@ -80,7 +80,7 @@ int TBitField :: GetBit (const int n) const // получить значение
 
 // битовые операции
 
-TBitField & TBitField :: operator = (const TBitField & bf) // присваивание
+TBitField & TBitField :: operator = (const TBitField & bf) //  присваивание
 {
 	BitLen = bf.BitLen;
 	MemLen = bf.MemLen;
