@@ -44,7 +44,6 @@ int TBitField :: GetMemIndex (const int n) const // индекс Мем для �
 
 TELEM TBitField :: GetMemMask (const int n) const // битовая маска для бита n
 {
-	//return 1 << (n - (sizeof (TELEM) * 8 * n));
 	return 1 << (n & (sizeof (TELEM) * 8 - 1));
 }
 
